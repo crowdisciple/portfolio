@@ -1,0 +1,508 @@
+@media only screen and (min-width: 600px) {
+
+    .header {
+        height: 60px;
+        background-position: bottom;
+
+    }
+
+    .body {
+        height: auto;
+        background-position: top;
+        margin-top: -13px;
+
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-weight: 400;
+        font-size: 3.5vw;
+        white-space: nowrap;
+    }
+
+    .buy-tickets-button h2 {
+        font-size: 73px;
+    }
+
+    h2 {
+        font-weight: 300;
+        font-size: 2.5vw;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    h3 {
+        font-family: 'Roboto Slab', serif;
+        color: white;
+        font-weight: 300;
+        font-size: 35px;
+        text-align: center;
+
+        text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    }
+
+    h5 {
+        font-weight: 300;
+        font-size: 30px;
+    }
+
+    h6 {
+        font-family: 'Roboto Slab', serif;
+        color: white;
+        font-weight: 100;
+        font-size: 20px;
+        text-align: center;
+
+        padding-top: 5px;
+    }
+
+    p {
+        font-family: 'Roboto Slab', serif;
+        color: white;
+        font-weight: 100;
+        font-size: 20px;
+        text-align: center;
+
+        padding: 15px;
+    }
+
+    p.date {
+        font-weight: 600;
+        font-size: 48px;
+    }
+
+    p.line1 {
+        font-weight: 700;
+        font-size: 50px;
+    }
+    
+    p.line2 {
+        font-weight: 700;
+        font-size: 45px;
+    }
+    
+    p.line3 {
+        font-weight: 700;
+        font-size: 43px;
+    }
+    
+    p.line4 {
+        font-weight: 700;
+        font-size: 41px;
+    }
+
+    p.line5 {
+        font-family: 'Oxanium', cursive;
+        color: white;
+        text-align: center;
+        letter-spacing: 0.12em;
+        line-height: 156.5%;
+        font-weight: 700;
+        font-size: 38px;
+    }
+
+    p.news-font {
+        font-weight: 500;
+        font-size: 40px;
+    }
+
+    .projects-header p.news-font{
+        font-weight: 500;
+        font-size: 40px;
+    }
+
+    p.logo-font1 {
+        font-weight: 800;
+        font-size: 70px;  
+    }
+
+    p.logo-font2 {  
+        font-weight: 700;
+        font-size: 40px;
+    }
+
+    p.button-font {
+        font-weight: 200px;
+        font-size: 32px;
+    }
+
+    p.copyright-font {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    /* Change top menu gradient colour */
+    .top-menu {
+        width: 100%;
+        height: 60px;
+    
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        background: #1d1d20;
+    }
+
+    .desktop-menu-left-wrapper {
+        display: flex;
+        margin-left: 65px;
+        gap: 25px;
+    }
+
+    .desktop-menu-right-wrapper {
+        display: flex;
+        flex-flow: row;
+        margin-right: 65px;
+        gap: 25px;
+    }
+
+    .social-media-desktop {
+        display: flex;
+    
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        cursor: pointer;
+    }
+
+    .buy-tickets-desktop {
+        display: flex;
+        justify-content: center;
+
+        width: 259px;
+        height: auto;
+        background: rgba(0, 65, 102, 0.66);
+        padding-top: 3px;
+        
+        cursor: pointer;
+    }
+
+    .featured-overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .3s ease;
+    }
+
+    .featured-overlay2 {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .3s ease;
+    }
+
+
+    .featured-project-content:hover .featured-overlay {
+        opacity: 1;
+    }
+
+    .lineup-header-desktop {
+        display: flex;
+    }
+
+    .lineup-header {
+        display: none;
+    }
+
+    .lineup-page-arrow i {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .desktop-logo {
+        width: 1180px;
+        height: auto;
+        line-height: 0.8;
+        margin-top: 60px;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .header-middle {
+        margin-top: 270px;
+    }
+
+    .locations {
+        width: 100%;
+        height: auto;
+        letter-spacing: 0.50em;
+        margin-bottom: 25px;
+    }
+
+    .buy-tickets-button {
+        width: 550px;
+        height: auto;
+        background: rgba(0, 65, 102, 0.66);
+        padding-top: 24px;
+        padding-bottom: 0px;
+
+        display: flex;
+        justify-content: center;
+        white-space: nowrap;
+    }
+
+    .lineup-arrow {
+        display: none;
+    }
+
+    .projects-header {
+        /* padding-bottom: 90px; */
+        padding-top: 52px;
+    }
+
+    .lineup-desktop {
+        display: flex;
+        width: auto;
+        height: auto;
+        margin-top: 100px;
+    }
+    
+    .lineup {
+        display: none;
+    }
+
+    .lineup-list-desktop {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 43px;
+    }
+
+    .lineup-list {
+        display: none;
+    }
+
+    .event-location-wrapper {
+        flex-flow: row nowrap;
+    }
+
+    .projects-wrapper {
+        flex-flow: row wrap;
+    }
+
+    .project {
+        flex-flow: column;
+    }
+
+    .event-details-header {
+        padding-bottom: 20px;
+    }
+
+    .location-content {
+        width: 80%;
+        height: 400px;
+    }
+
+    .location-name {
+        line-height: 65px;
+    }
+
+    /* Change Fade Colour */
+    .footer {
+        background: rgb(10,10,10);
+        background: linear-gradient(0deg, rgba(10,10,10,1) 30%, rgba(10,10,10,0) 100%);
+    }
+
+    .footer-games {
+        background: rgb(10,10,10);
+        background: linear-gradient(0deg, rgba(10,10,10,1) 30%, rgba(10,10,10,0) 100%);
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        gap: 270px;
+    }
+
+    .footer-socials {
+        padding-top: 0px;
+    }
+
+    .email-address-box {
+        width: 430px;
+        height: 55px;
+    }
+
+    input[type=email] {
+        width: 430px;
+        height: 55px;
+
+        font-size: 20px;
+    }
+
+    input::placeholder {
+        font-size: 20px;
+    }
+ 
+    .sign-up-icon {
+        display: none;
+    }
+
+    .subscribe-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 200px;
+        height: 55px;
+        background: #004166;
+
+        cursor: pointer;
+    }
+
+    .social-media-desktop-footer {
+        display: flex;
+        margin-top: 23px;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 33px;
+        margin-right: 10px;
+
+        cursor: pointer;
+    }
+
+    .social-media {
+        display: none;
+    }
+
+    .social-media-desktop-footer i {
+        font-size: 60px;
+    }
+    
+    .footer-links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .links-column1 {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content:center;
+        align-items: center;
+    }
+
+    .links-column2 {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content:center;
+        align-items: center;
+    }
+
+    .links-column3 {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content:center;
+        align-items: center;
+    }
+
+    .footer-links a {
+        font-weight: 300;
+        font-size: 28px;
+        letter-spacing: 0.145em;
+    }
+
+    .copyright {
+        margin-top: 44px;
+        margin-bottom: 44px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .top-menu {
+        width: 100%;
+        height: 80px;
+    
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .hamburger-menu {
+        display: flex;
+
+        width: 40px;
+        height: auto;
+        margin-right: 19px;
+        margin-top: 10px;
+    
+        cursor: pointer;
+    }
+
+    .desktop-menu-left-wrapper {
+        display: none;
+    }
+
+    .desktop-menu-right-wrapper {
+        display: none;
+    }
+
+    .social-media-desktop {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .footer-content {
+        gap: 50px;
+    }
+
+    .footer-links {
+        gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .sign-up-icon {
+        display: flex;
+    }
+
+    .subscribe-button {
+        display: none;
+    }
+
+    .social-media-desktop-footer {
+    display: none;
+    }
+
+    .footer-links {
+        display: none;
+    }
+
+    .artist-name h6 {
+        font-size: 48px;
+    }
+
+
+
+}

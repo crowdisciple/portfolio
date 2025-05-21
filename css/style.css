@@ -6,7 +6,7 @@
 
 body {
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: auto;
     background-color: #0a0a0a;
 }
 
@@ -212,9 +212,9 @@ img {
 }
 
 img.featured-bg {
-    filter: blur(1px);
-    -webkit-filter: blur(1px)
-    opacity(0.85);
+    /* filter: blur(1px); */
+    /* -webkit-filter: blur(1px) */
+    /* opacity(0.85); */
 
     display: block;
 }
@@ -429,7 +429,7 @@ img.featured-bg:hover {
 .projects-header {
     width: 100%;
     height: auto;
-    padding-bottom: 170px;
+    padding-bottom: 50px;
 }
 
 .lineup-list {
@@ -576,7 +576,28 @@ a.featured-project-wrapper {
     flex-flow: column nowrap;
 }
 
-.event-location {
+.other-project1
+{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+}
+.other-project2
+{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+}
+.other-project3
+{
     width: 100%;
     height: auto;
 
@@ -595,40 +616,48 @@ a.featured-project-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 
     flex-flow: column nowrap;
-    padding-top: 100px;
+    /* padding-top: 100px; */
 
-    row-gap: 150px;
+    row-gap: 50px;
 }
 
 .project {
     max-width: 550px;
     width: 100%;
-    height: 400px;
 
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding-bottom: 70px;
-    margin-bottom: 100px;
+    
 }
 
 .project-content {
     max-width: 450px;
-    width: 85%;
-    min-height: 400px;
     height: 700px;
+
     position: relative;
 
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-flow: column;
 
     background-color: #0a0a0a;
-    padding-bottom: 20px;
     border-radius: 20px;
+    padding-bottom: 20px;
+}
+
+.artist-name h6 {
+    line-height: 70px;
+}
+
+.game-top {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .artist-name {
@@ -638,25 +667,22 @@ a.featured-project-wrapper {
     flex-flow: column nowrap;
     align-items: center;
     line-height: 45px;
-    margin-top: -125%;
-}
 
-.artist-name h6 {
-    line-height: 70px;
+    /* margin-top: -125%; */
 }
 
 .project-image {
     width: 100%;
     height: 100%;
-    max-height: 240px;
-    margin-bottom: 10px;
+    /* max-height: 240px; */
+    /* margin-bottom: 10px; */
     display: flex;
     justify-content: center;
 }
 
 .game-details {
-    margin-top: 10px;
-    padding-bottom: 195px;
+    padding-top: 10px;
+    /* padding-bottom: 195px; */
     flex-flow: column;
     justify-content: center;
 }
@@ -671,6 +697,7 @@ a.featured-project-wrapper {
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 5px;
+    /* margin-top: 5px; */
 }
 
 .game-description {
@@ -697,7 +724,7 @@ a.featured-project-wrapper {
     width: 100%;
     display: flex;
     flex-flow: row nowrap;
-    align-items:baseline;
+    /* align-items:baseline; */
     justify-content:space-between;
 
     /* background-color: blueviolet; */
@@ -724,7 +751,7 @@ a.featured-project-wrapper {
     margin-top: 10px;
 }
 
-.location-image {
+.other-image1 {
     width: 100%;
     height: 100%;
     display: flex;
@@ -733,10 +760,174 @@ a.featured-project-wrapper {
     filter: brightness(0.6);
 }
 
-.location-image:hover {
+.other-image2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+    filter: brightness(0.6);
+}
+
+.other-image3 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+    filter: brightness(0.6);
+}
+
+.other-project1:hover .other-image1{
     filter: brightness(1);
     transform: scale(1.02);
 }
+.other-project2:hover .other-image2{
+    filter: brightness(1);
+    transform: scale(1.02);
+}
+.other-project3:hover .other-image3{
+    filter: brightness(1);
+    transform: scale(1.02);
+}
+
+
+.art {
+    display: flex;
+    margin-left: 70px;
+    margin-right: 70px;
+    border-radius: 20px;
+    /* background-color: #161616; */
+    /* background-color: #0a0a0a; */
+}
+
+.artgrid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    grid-auto-flow: dense;
+    gap: 20px;
+    padding: 30px;
+
+}
+
+.artgrid-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-height: fit-content;
+    
+    /* background-color: #1d1d1d; */
+    background-color: #161616;
+    
+}
+
+/* spans across 2 rows and 2 columns - 4 cells */
+img.four-grid-cells {
+    grid-row: span 2 / auto;
+    grid-column: span 2 / auto;
+    /* max-height: 700px; */
+}
+
+img.wide-image {
+    grid-column: span 2 / auto;
+}
+
+.artgrid-wrapper img:hover {
+    transform: scale(1.02);
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+   .artgrid-wrapper {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+}
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 5; /* Sit on top */
+    box-sizing: border-box;
+    padding-top: 80px; /* Location of the box */
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.modal-box {
+    display: block;
+    max-width: 700px;
+    max-height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 50vw;
+  max-height: 95vh;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 80px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
 
 .footer {
     width: 100%;
@@ -757,7 +948,6 @@ a.featured-project-wrapper {
     justify-content: center;
     align-items: center;
     background-image: none;
-    margin-top: -80px;
 
 }
 

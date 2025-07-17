@@ -17,7 +17,7 @@
 
     h1 {
         font-weight: 400;
-        font-size: 3.5vw;
+        font-size: 4vw;
         white-space: nowrap;
     }
 
@@ -47,7 +47,7 @@
         font-size: 30px;
     }
 
-    h6 {
+    /* h6 {
         font-family: 'Roboto Slab', serif;
         color: white;
         font-weight: 100;
@@ -55,7 +55,7 @@
         text-align: center;
 
         padding-top: 5px;
-    }
+    } */
 
     p {
         font-family: 'Roboto Slab', serif;
@@ -229,11 +229,39 @@
         width: 1180px;
         height: auto;
         line-height: 0.8;
-        margin-top: 60px;
+        /* margin-top: 60px; */
 
         display: flex;
         align-items: center;
         flex-direction: column;
+        margin-top: -0.5%;
+        margin-left: 1%;
+
+    }
+    .desktop-logo2 {
+        width: 1180px;
+        height: auto;
+        line-height: 0.8;
+        /* margin-top: 60px; */
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 16%;
+        margin-top: 245px;
+    }
+
+    .desktop-logo3 {
+        width: 1180px;
+        height: auto;
+        line-height: 0.8;
+        /* margin-top: 60px; */
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        /* margin-left: 16%;
+        margin-top: 245px; */
     }
 
     .header-middle {

@@ -8,6 +8,9 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
     background-color: #0a0a0a;
+    background-image: url("/image/Star_RepeatPattern.png");
+    background-repeat: repeat;
+    background-size: 40%;
 }
 
 
@@ -59,7 +62,7 @@ h5 {
 h6 {
     font-family: 'Roboto Slab', serif;
     color: white;
-    font-weight: 100;
+    font-weight: 400;
     font-size: 20px;
     text-align: center;
 
@@ -308,8 +311,6 @@ img.featured-bg:hover {
     align-items: center;
     flex-direction: column;
 
-    /* border-style:solid; */
-    /* border-color: rgb(41, 41, 41); */
     border-radius: 20px;
 }
 
@@ -329,11 +330,24 @@ img.featured-bg:hover {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: -8px; 
+    margin-top: 50px; 
+    margin-bottom: -5%;
+}
+
+.logo-image {
+    width: 90%;
+    margin-right: 5%;
+    z-index: 1;
 }
 
 .desktop-logo {
     display: none;
+    position: absolute;
+}
+
+.desktop-logo2 {
+    display: none;
+    position: absolute;
 }
 
 .logo {
@@ -429,7 +443,13 @@ img.featured-bg:hover {
 .projects-header {
     width: 100%;
     height: auto;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
+}
+
+.projects-header2 {
+    width: 100%;
+    height: auto;
+    margin-top: 54px;
 }
 
 .lineup-list {
@@ -442,6 +462,16 @@ img.featured-bg:hover {
 }
 
 .info-boxes {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.game-info-boxes {
     width: 100%;
     height: auto;
     display: flex;
@@ -468,6 +498,26 @@ img.featured-bg:hover {
     height: auto;
     margin: 35px;
     margin-left: 20px;
+    border-radius: 20px;
+    margin-top: -5px;
+}
+
+.project-info-box-1 {
+    width: 30%;
+    height: auto;
+    margin: 20px;
+    margin-right: 30px;
+    padding: 15px;
+    background-color: #161616;
+
+    border-color: rgb(177, 177, 177);
+    border-radius: 20px;
+}
+
+.project-info-box-2 {
+    width: 70%;
+    height: 100%;
+    margin-left: 30px;
     border-radius: 20px;
 }
 
@@ -634,7 +684,7 @@ a.featured-project-wrapper {
 }
 
 .project-content {
-    max-width: 450px;
+    width: 450px;
     height: 700px;
 
     position: relative;
@@ -657,7 +707,7 @@ a.featured-project-wrapper {
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
-
+    max-height: 240px;
 }
 
 .artist-name {
@@ -674,10 +724,9 @@ a.featured-project-wrapper {
 .project-image {
     width: 100%;
     height: 100%;
-    /* max-height: 240px; */
-    /* margin-bottom: 10px; */
+    width: 450px;
+    overflow: hidden;
     display: flex;
-    justify-content: center;
 }
 
 .game-details {
@@ -698,6 +747,18 @@ a.featured-project-wrapper {
     margin-right: 50px;
     margin-bottom: 5px;
     /* margin-top: 5px; */
+}
+
+.game-expand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 20px;
+}
+
+.project-info-box-1 .game-link{
+    background-color:#1d1d20;
 }
 
 .game-description {
@@ -791,6 +852,46 @@ a.featured-project-wrapper {
     transform: scale(1.02);
 }
 
+.project-description {
+    /* margin-top: 20px; */
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.project-overview {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    margin-right: 30px;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+.project-overview-details {
+    width: 50%;
+}
+
+details {
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    font-weight: 100;
+    font-size: 20px;
+    text-align: center;
+
+    padding: 5px;
+    background-color: #111111;
+    border-radius: 25px;
+    margin-bottom: 15px;
+}
+
+summary {
+    cursor: pointer;
+}
 
 .art {
     display: flex;
@@ -930,6 +1031,8 @@ img.wide-image {
     width: 100%;
   }
 }
+
+
 
 
 .footer {

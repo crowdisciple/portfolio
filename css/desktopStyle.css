@@ -67,6 +67,16 @@
         padding: 15px;
     }
 
+    li {
+        font-family: 'Roboto Slab', serif;
+        color: white;
+        font-weight: 100;
+        font-size: 20px;
+        text-align: center;
+
+        padding: 15px;
+    }
+
     p.date {
         font-weight: 600;
         font-size: 48px;

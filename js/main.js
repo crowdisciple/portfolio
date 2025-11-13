@@ -189,6 +189,36 @@ img.onclick = function(){
   body.style.overflowY = "hidden";
 }
 
+var img = document.getElementById("art17Img");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+  body.style.overflowY = "hidden";
+}
+
+var img = document.getElementById("art18Img");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+  body.style.overflowY = "hidden";
+}
+
+var img = document.getElementById("art19Img");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+  body.style.overflowY = "hidden";
+}
+
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
